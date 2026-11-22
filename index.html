@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Puuradministratie · Boekhouding en belastingaangifte</title>
+  <meta name="description" content="Boekhouding en belastingaangifte voor zzp'ers, particulieren en bedrijven. Geen vakjargon, een vaste prijs vooraf.">
+  <meta name="theme-color" content="#5B3CC4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.puurKlaar)document.documentElement.classList.remove('js');},4000);</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 30 20"><rect x="0" y="2" width="30" height="6" rx="3" fill="#F2B705"/><rect x="8" y="12" width="22" height="6" rx="3" fill="currentColor"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></g></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="logo" href="#top" aria-label="Puuradministratie, naar boven"><svg aria-hidden="true"><use href="#logo"/></svg><span><b>puur</b>administratie</span></a>
+    <nav aria-label="Hoofdmenu"><a href="#voor-wie">Voor wie</a><a href="#diensten">Diensten</a><a href="#vragen">Vragen</a><a href="#contact">Contact</a></nav>
+    <a class="btn js-mail" data-subject="Kennismaking" href="mailto:info@puuradministratiekantoor.nl"><svg aria-hidden="true"><use href="#mail"/></svg>Mail ons</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 1 · Kop met bonnetjes -->
+  <section class="wrap hero" aria-labelledby="t-hero">
+    <div class="hero__t">
+      <span class="k">Boekhouding en belastingaangifte</span>
+      <h1 class="d" id="t-hero">Jij doet je werk. <span>Wij doen je boekhouding en aangifte.</span></h1>
+      <p>Voor zzp'ers, particulieren en bedrijven. Geen vakjargon, geen verrassingen achteraf. Jij geeft ons wat je hebt, wij maken er een kloppende administratie van.</p>
+      <div class="hero__actions">
+        <a class="btn js-mail" data-subject="Kennismaking" href="mailto:info@puuradministratiekantoor.nl"><svg aria-hidden="true"><use href="#mail"/></svg>Mail ons</a>
+        <a class="btn btn--light" href="#voor-wie">Bekijk wat we voor jou doen</a>
+      </div>
+      <p class="hero__who"><b>Ook voor:</b> zorg, onderwijs, bouw, kappers, taxichauffeurs, bol-verkopers en meer.</p>
+    </div>
+    <div class="flip">
+      <div class="flip__sw" role="group" aria-label="Bekijk je administratie"><button type="button" data-v="zonder" aria-pressed="true">Zonder ons</button><button type="button" data-v="met" aria-pressed="false">Met <span class="flip__long">Puuradministratie</span><span class="flip__short">ons</span></button></div>
+      <div class="box">
+        <div class="mess" data-mess aria-label="Losse bonnetjes en vragen">
+          <div class="slip" style="left:1%;top:3%;--draai:-6deg"><b>Tankbon</b>Shell · € 78,40<br><em>zakelijk of privé?</em></div>
+          <div class="slip" style="left:47%;top:1%;--draai:4deg"><b>Uitbetaling bol</b>€ 1.204,10<br><em>is dit omzet?</em></div>
+          <div class="slip" style="left:18%;top:29%;--draai:3deg"><b>Factuur thuiszorg</b>maart · 64 uur<br><em>btw of niet?</em></div>
+          <div class="slip" style="left:55%;top:34%;--draai:-5deg"><b>Bonnetje laptop</b>€ 1.099,00<br><em>mag ik dit aftrekken?</em></div>
+          <div class="slip" style="left:4%;top:61%;--draai:5deg"><b>Brief Belastingdienst</b>Btw-aangifte Q3<br><em>uiterlijk 31 oktober</em></div>
+          <div class="slip" style="left:49%;top:66%;--draai:-2deg"><b>Ritten oktober</b>lijstje in je telefoon<br><em>nog niet bijgewerkt</em></div>
+        </div>
+        <div data-ledger hidden>
+          <table class="ledger">
+            <caption>Jouw overzicht, 3e kwartaal</caption>
+            <thead><tr><th>Post</th><th>Status</th><th class="n">Bedrag</th></tr></thead>
+            <tbody>
+              <tr><td>Omzet en facturen</td><td class="ok">Verwerkt</td><td class="n">€ …</td></tr>
+              <tr><td>Kosten en bonnetjes</td><td class="ok">Verwerkt</td><td class="n">€ …</td></tr>
+              <tr><td>Zakelijk en privé</td><td class="ok">Gescheiden</td><td class="n">…</td></tr>
+              <tr><td>Btw te betalen of terug</td><td class="ok">Berekend</td><td class="n">€ …</td></tr>
+            </tbody>
+            <tfoot><tr><td>Btw-aangifte Q3</td><td class="ok">Ingediend</td><td class="n">vóór 31 okt</td></tr></tfoot>
+          </table>
+          <p class="box__note">Zo ziet je overzicht eruit. De bedragen zijn van jou.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · Voor wie -->
+  <section class="section section--flush wrap" id="voor-wie" aria-labelledby="t-who">
+    <div class="head">
+      <span class="k">Voor wie</span>
+      <h2 class="d" id="t-who">Wat doe jij? Dan zie je wat wij voor je doen.</h2>
+    </div>
+    <div class="who">
+      <div class="who__list" role="tablist" aria-label="Wie ben je?" data-list></div>
+      <div class="who__panel deep" role="tabpanel" data-panel aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- 3 · Twee voorbeelden: taxi en bol -->
+  <section class="section section--flush wrap" aria-labelledby="t-branche">
+    <div class="head">
+      <span class="k">Boekhouding en aangifte</span>
+      <h2 class="d" id="t-branche">Elk werk heeft eigen regels. Wij kennen ze.</h2>
+      <p class="lead">Je boekhouding en je aangifte, afgestemd op wat jij doet. Twee voorbeelden uit de praktijk:</p>
+    </div>
+    <div class="spec">
+      <article class="spec__taxi deep">
+        <span class="k">Taxichauffeurs</span>
+        <h3>Rijden is je werk. Je boekhouding niet.</h3>
+        <p>Of je nu via Uber of Bolt rijdt of je eigen klanten hebt: we weten hoe je ritten, kilometers en btw in elkaar zitten.</p>
+        <ul class="pain"><li><span><b>Ritadministratie</b> uit platforms en eigen klanten, per kwartaal klaar.</span></li><li><span><b>Kilometers en autokosten</b> zakelijk en privé gescheiden.</span></li><li><span><b>9% btw</b> op personenvervoer, goed aangegeven.</span></li></ul>
+        <a class="btn js-mail" data-subject="Boekhouding taxichauffeur" data-body="Hoi Puuradministratie, ik ben taxichauffeur en ik zoek hulp met mijn boekhouding en aangifte." href="mailto:info@puuradministratiekantoor.nl"><svg aria-hidden="true"><use href="#mail"/></svg>Mail ons als taxichauffeur</a>
+      </article>
+      <article class="spec__bol">
+        <span class="k">Verkopen via bol</span>
+        <h3>Je bol-uitbetaling is niet je omzet.</h3>
+        <p>Bol houdt commissie en kosten in voordat het uitbetaalt. Wij halen dat uit elkaar, zodat je btw en je winst kloppen.</p>
+        <ul class="pain"><li><span><b>Omzet, commissie en kosten</b> uit je bol-overzichten apart geboekt.</span></li><li><span><b>Btw</b> over je verkopen, en de btw op de bol-commissie teruggevraagd.</span></li><li><span><b>Retouren en voorraad</b> die aansluiten op wat je echt verkocht.</span></li><li><span><b>Verkoop naar België</b> en de rest van de EU, met de OSS-regeling als dat nodig is.</span></li></ul>
+        <a class="btn js-mail" data-subject="Boekhouding bol-verkoper" data-body="Hoi Puuradministratie, ik verkoop via bol en ik zoek hulp met mijn boekhouding en btw." href="mailto:info@puuradministratiekantoor.nl"><svg aria-hidden="true"><use href="#mail"/></svg>Mail ons als bol-verkoper</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4 · De afspraak -->
+  <section class="section section--flush wrap" id="diensten" aria-labelledby="t-deal">
+    <div class="deal-wrap">
+      <div class="head">
+        <span class="k">Diensten</span>
+        <h2 class="d" id="t-deal">Twee diensten. Vooraf duidelijk.</h2>
+        <p class="lead">Puur betekent: je weet vooraf wat we doen, wanneer, en wat het kost. Geen rekening achteraf die je niet zag aankomen.</p>
+      </div>
+      <article class="deal" aria-label="Onze afspraak">
+        <h3>Onze afspraak</h3>
+        <dl>
+          <div><dt>Wij doen</dt><dd><b>Boekhouding en administratie:</b> je facturen, bonnetjes en bank verwerkt. <b>Belastingaangifte:</b> btw en inkomstenbelasting.</dd></div>
+          <div><dt>Jij levert</dt><dd>Je bonnetjes, facturen en bankafschriften. Hoe, spreken we samen af.</dd></div>
+          <div><dt>Wanneer</dt><dd>Btw elk kwartaal, inkomstenbelasting voor 1 mei of met uitstel. Wij houden de data bij.</dd></div>
+          <div><dt>Wat het kost</dt><dd>Een vaste prijs, vooraf afgesproken. Boekhouding vanaf <span class="todo">[EUR ..]</span> per maand, aangifte vanaf <span class="todo">[EUR ..]</span>.</dd></div>
+          <div><dt>Je vragen</dt><dd>In gewone taal beantwoord, per mail.</dd></div>
+        </dl>
+        <div class="deal__more"><p>Iets anders nodig, of heb je een bv?</p><a class="btn js-mail" data-subject="Offerte aanvragen" data-body="Hoi Puuradministratie, ik wil graag een offerte. Het gaat om: " href="mailto:info@puuradministratiekantoor.nl"><svg aria-hidden="true"><use href="#mail"/></svg>Vraag een offerte</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 5 · Vragen -->
+  <section class="section section--white" id="vragen" aria-labelledby="t-qa">
+    <div class="wrap qa-wrap">
+      <div class="head">
+        <span class="k">In gewone taal</span>
+        <h2 class="d" id="t-qa">Vragen die we vaak krijgen.</h2>
+        <p class="lead">Staat jouw vraag er niet bij? Mail hem gewoon.</p>
+        <a class="btn btn--light btn--start js-mail" data-subject="Vraag" href="mailto:info@puuradministratiekantoor.nl"><svg aria-hidden="true"><use href="#mail"/></svg>Stel je vraag</a>
+      </div>
+      <div class="qa">
+        <label class="qa__search"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></g></svg><span class="sr">Zoek een vraag</span><input type="search" data-q placeholder="Zoek, bijvoorbeeld ‘btw’ of ‘bol’"></label>
+        <div class="qa__chips" role="group" aria-label="Filter" data-chips></div>
+        <div class="qa__list" data-qalist aria-live="polite"></div>
+        <p class="qa__note">Dit is algemene uitleg. Je eigen situatie bespreken we samen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · Contact -->
+  <section class="section wrap" id="contact" aria-labelledby="t-contact">
+    <div class="contact deep">
+      <div class="contact__t">
+        <span class="k">Contact</span>
+        <h2 class="d" id="t-contact">Vertel ons wat je doet. Wij zeggen eerlijk wat het kost.</h2>
+        <p class="lead">Kies hiernaast wie je bent en waar je hulp bij zoekt. Je mail staat dan klaar.</p>
+        <div class="contact__mail"><small>Of mail direct naar</small><div class="row"><strong data-addr>info@puuradministratiekantoor.nl</strong><button type="button" class="copy" data-copy>Kopieer</button></div></div>
+      </div>
+      <form class="quiz" data-quiz>
+        <fieldset><legend>Ik ben</legend><div class="opts" data-who-opts></div></fieldset>
+        <fieldset><legend>Ik zoek hulp met</legend><div class="opts">
+          <label><input type="checkbox" name="what" value="mijn boekhouding" checked><span>Boekhouding</span></label>
+          <label><input type="checkbox" name="what" value="btw-aangifte"><span>Btw-aangifte</span></label>
+          <label><input type="checkbox" name="what" value="inkomstenbelasting"><span>Inkomstenbelasting</span></label>
+          <label><input type="checkbox" name="what" value="iets anders"><span>Iets anders, offerte</span></label>
+        </div></fieldset>
+        <div class="quiz__out" data-out aria-live="polite"></div>
+        <a class="btn" data-send href="mailto:info@puuradministratiekantoor.nl"><svg aria-hidden="true"><use href="#mail"/></svg>Mail dit bericht</a>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <div><a class="logo" href="#top" aria-label="Puuradministratie, naar boven"><svg aria-hidden="true"><use href="#logo"/></svg><span><b>puur</b>administratie</span></a><p class="foot__intro">Boekhouding en belastingaangifte voor zzp'ers, particulieren en bedrijven.</p></div>
+  <div><h4>Contact</h4><a class="js-mail" data-subject="Kennismaking" href="mailto:info@puuradministratiekantoor.nl">info@puuradministratiekantoor.nl</a><p>Werkgebied: <span class="todo">[WERKGEBIED INVULLEN]</span></p></div>
+  <div><h4>Snel naar</h4><a href="#voor-wie">Voor wie</a><br><a href="#diensten">Diensten</a><br><a href="#vragen">Vragen</a></div>
+  <p class="foot__bottom">© 2026 Puuradministratie · KvK <span class="todo">[KVK INVULLEN]</span> · <a href="#">Privacy</a></p>
+</footer>
+
+</body>
+</html>
